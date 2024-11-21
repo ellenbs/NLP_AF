@@ -1,6 +1,8 @@
 # Classifying Sentiments on the TweetEval Dataset
 
-### Natural Language Processing (NLP) Project | Ellen Shen
+### Natural Language Processing (NLP) Project | Deep Learning Researcher
+
+Student: Ellen Shen
 
 This repository contains the code and resources for fine-tuning the **RoBERTa-Base** model to classify sentiments on the **TweetEval** dataset. The project focuses on the task of sentiment analysis with three predefined classes: **Negative**, **Neutral**, and **Positive**, and compares the results with the benchmarks reported in the TweetEval paper.
 
