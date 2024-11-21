@@ -22,27 +22,31 @@ Sentiment analysis is a key NLP task that involves classifying text into sentime
 ---
 
 ## Research on Previous Work
+
 Sentiment analysis has been extensively studied as a key task in Natural Language Processing (NLP). This project builds on prior work by leveraging transformer-based architectures for tweet-specific sentiment classification. Below, we summarize relevant research:
 
 1. TweetEval Benchmark
-The TweetEval benchmark, introduced by Barbieri et al. [1], provides a unified framework for evaluating tweet classification tasks, including sentiment analysis. The authors highlight challenges in handling noisy and informal tweet data and propose Macro-Averaged Recall as a robust metric for imbalanced datasets. Their work demonstrates the effectiveness of RoBERTa-Twitter, a variant of RoBERTa fine-tuned on Twitter-specific data, achieving a Macro-Averaged Recall of 72.9.
+
+    The TweetEval benchmark, introduced by Barbieri et al. [1], provides a unified framework for evaluating tweet classification tasks, including sentiment analysis. The authors highlight challenges in handling noisy and informal tweet data and propose Macro-Averaged Recall as a robust metric for imbalanced datasets. Their work demonstrates the effectiveness of RoBERTa-Twitter, a variant of RoBERTa fine-tuned on Twitter-specific data, achieving a Macro-Averaged Recall of 72.9.
 
 2. Transformer Models for Sentiment Analysis
-Liu et al. [2] introduced RoBERTa, an optimized variant of BERT, which outperforms previous transformer architectures on several NLP benchmarks. Its robust pretraining strategies make it a suitable candidate for fine-tuning on specialized tasks such as sentiment analysis.
+
+    Liu et al. [2] introduced RoBERTa, an optimized variant of BERT, which outperforms previous transformer architectures on several NLP benchmarks. Its robust pretraining strategies make it a suitable candidate for fine-tuning on specialized tasks such as sentiment analysis.
 
 3. Challenges in Sentiment Analysis on Tweets
-Research by Zhang et al. [3] focuses on the challenges of tweet sentiment analysis, including handling:
 
-Abbreviations and emojis.
-Domain-specific terminology.
-Imbalanced data distributions.
-Their findings suggest that fine-tuning large pre-trained models with data augmentation or domain-specific pretraining can significantly improve performance.
+    Research by Zhang et al. [3] focuses on the challenges of tweet sentiment analysis, including handling:
+
+    Abbreviations and emojis.
+    Domain-specific terminology.
+    Imbalanced data distributions.
+    Their findings suggest that fine-tuning large pre-trained models with data augmentation or domain-specific pretraining can significantly improve performance.
 
 4. Comparison with Traditional Approaches
-Traditional methods for sentiment analysis relied on feature engineering and classical machine learning algorithms (e.g., Logistic Regression, SVM). However, studies like Socher et al. [4] show that neural network-based methods, especially transformers, outperform classical approaches by capturing semantic nuances.
 
-Inspiration for This Project
-The current project adapts insights from these works:
+    Traditional methods for sentiment analysis relied on feature engineering and classical machine learning algorithms (e.g., Logistic Regression, SVM). However, studies like Socher et al. [4] show that neural network-based methods, especially transformers, outperform classical approaches by capturing semantic nuances.
+
+### Inspiration for This Project
 
 Leveraging RoBERTa as a baseline transformer model due to its strong performance across diverse NLP tasks [2].
 Using the TweetEval dataset and its evaluation metrics [1] to standardize performance comparison.
@@ -102,4 +106,5 @@ These results demonstrate the model's competitive performance compared to the **
 
 1. Barbieri, F., et al. "TweetEval: Unified Benchmark and Comparative Evaluation for Tweet Classification." arXiv preprint arXiv:2010.12421, 2020.
 2. Liu, Y., et al. "RoBERTa: A Robustly Optimized BERT Pretraining Approach." arXiv preprint arXiv:1907.11692, 2019.
-3. Hugging Face Transformers Library.
+3. Zhang, Z., et al. "Sentiment Analysis of Twitter Data Using Machine Learning Approaches and Semantic Analysis." Journal of Big Data, 2018. Link
+4. Socher, R., et al. "Recursive Deep Models for Semantic Compositionality Over a Sentiment Treebank." EMNLP, 2013.
